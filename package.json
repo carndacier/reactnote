@@ -1,0 +1,57 @@
+{
+  "name": "reactnote",
+  "version": "1.0.0",
+  "description": "First app, a notes manager, to learn react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carndacier/reactnote.git"
+  },
+  "keywords": [
+    "notes",
+    "manager",
+    "react",
+    "reactjs"
+  ],
+  "author": "Sacha Lachkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carndacier/reactnote/issues"
+  },
+  "homepage": "https://github.com/carndacier/reactnote#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webpack": "^4.6.0",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "less": "^3.0.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.20.3",
+    "webpack-cli": "^2.0.14"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  }
+}
