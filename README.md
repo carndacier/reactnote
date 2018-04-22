@@ -10,7 +10,7 @@ A notes manager to learn react
 
   ### Routing
  - Define routes in a ```route.js``` file
- - Import routes in the app.js and use the html tag
+ - Import routes in the ```app.js``` and use the html tag
 
 
 ## Redux
