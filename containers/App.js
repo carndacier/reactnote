@@ -2,29 +2,24 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import InputPreview from '../components/InputPreview';
+import NoteComponent from '../components/note.component';
 
-import { setMessage } from '../actions/message';
+import { addNote } from '../actions/note.action';
 
 class App extends Component {
 
-  _onChange = (value) => {
-    this.props.dispatch(setMessage(value))
+  _onAddNote = (value) => {
+    this.props.dispatch(addNote({ title: 'Test', content: 'Hello there !'}));
   }
 
   render() {
 
-    const { message } = this.props.messageReducer;
+    const notes = this.props.noteReducer.map((note) => <NoteComponent key={note.id} id={note.id} title={note.title} content={note.content} />);
+
     return (
       <div>
-        <InputPreview
-          value={message}
-          onChange={this._onChange}
-        />
-
-        <Link to="/about">
-          <button>Go to About</button>
-        </Link>
+        {notes}
+        <button onClick={this._onAddNote}>Add</button>
       </div>
     )
   }
