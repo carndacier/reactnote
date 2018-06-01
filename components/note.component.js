@@ -20,7 +20,7 @@ class NoteComponent extends React.Component {
      <div>
        <h2>{this.props.title}</h2>
        <p>{this.props.content}</p>
-       <button onClick={this._onEdit}>Edit</button>
+       <button onClick={this._onEdit}>Update</button>
        <button onClick={this._onRemove}>Remove</button>
      </div>
     )

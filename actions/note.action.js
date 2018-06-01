@@ -4,6 +4,7 @@ export const addNote = (note) => {
   return dispatch => {
     dispatch({
       type: ADD_NOTE,
+      
       payload: note
     })
   }
